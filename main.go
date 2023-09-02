@@ -43,14 +43,13 @@ func traverseDiv(n *html.Node) {
 			if attr.Key == "class" && attr.Val == "caas-attr-meta-time" {
 				divText := getTextContent(n)
 				fmt.Println(divText)
-				fmt.Println("Hello")
+
 			}
 		}
 	}
 	for c := n.FirstChild; c != nil; c = c.NextSibling {
 		traverseDiv(c)
 	}
-	fmt.Println("Hello")
 
 }
 
